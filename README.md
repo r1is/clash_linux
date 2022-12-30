@@ -5,8 +5,8 @@
 ## 使用方法
 
 ```bash
-git clcone https://github.com/r1is/linux-clash-webui.git
-cd linux-clash-webui.git
+git clcone https://github.com/r1is/kali-clash-webui.git
+cd kali-clash-webui.git
 chmod +x install.sh
 sudo ./install
 ```
