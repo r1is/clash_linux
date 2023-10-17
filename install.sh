@@ -8,7 +8,14 @@ fi
 
 if [ -d ./clash ];then
   cp -r ./clash /etc
+  chmod +x /etc/clash/clash
   cp ./clash/clash.service /etc/systemd/system
   systemctl enable clash.service
   systemctl start clash.service
+  echo ""
+  /ect/clash/clash -v
+  echo "Clash install sucess...."
+  echo "Clash配置文件路径：/etc/clash"
+  echo "开启clash: systemctel start clash"
+  echo "关闭clash: systemctel stop clash"
 fi
